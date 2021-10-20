@@ -1,0 +1,84 @@
+:root{
+    --white: rgba(255,255,255,0.5);
+    --shadow: rgba(0, 0, 0, .3);
+    --black: rgba(0, 0, 0, .7);
+    --font: 'Noto Sans TC', sans-serif;
+    --green: #b5caa0;
+}
+
+body{
+    text-align: center;
+    background-color: var(--green);
+    margin: 30px;
+}
+
+h2{
+    font-size: 20px;
+    font-family: var(--font);
+    font-weight: 700;
+}
+p{
+    margin: 5px;
+}
+hr{
+    border: 0;
+    border-bottom: 1px dashed var(--shadow);
+    width: 600px;
+}
+
+.question{
+    background-color: var(--white);
+    box-shadow: 3px 3px 20px var(--shadow);
+    text-align: left;
+
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 30px;
+    width: 600px;
+}
+.question-title{
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+}
+.question-title .question-btn{
+    border: none;
+    background: none;
+    margin-left: auto;
+}
+
+/* show/hide icon and text */
+.question-text {
+    font-family: var(--font);
+    font-weight: 100;
+    display: none;
+}
+.plus-icon{
+    color: var(--black);
+    font-size: 24px;
+    display: block;
+}
+.minus-icon{
+    color: var(--black);
+    font-size: 24px;
+    display:none;
+}
+
+.show-text .plus-icon{
+    display: none;
+}
+.show-text .question-text{
+    display: block;
+}
+.show-text .minus-icon{
+    display: inline;
+}
+
+/* footer css */
+.footer-sign{
+    font-family: var(--font);
+    font-weight: 100;
+    color: var(--black);
+    bottom: 10px;
+}
